@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProjectService {
+  //private apiUrl = 'http://127.0.0.1:8000/api';
   private apiUrl = 'https://mecatronica-backend.onrender.com/api'; // URL base para no repetir
 
   constructor(private http: HttpClient) { }
@@ -43,7 +44,7 @@ export class ProjectService {
 
   // Actualizar proyecto (usamos POST con _method=PUT por limitaciones de FormData en PHP)
   updateProject(id: number, formData: FormData): Observable<any> {
-  formData.append('_method', 'PUT'); 
+  //formData.append('_method', 'PUT'); 
   return this.http.post(`${this.apiUrl}/projects/${id}`, formData);
 }
 
