@@ -1,4 +1,4 @@
-<div class="d-flex flex-column min-vh-100">
+<div class="d-flex flex-column min-vh-100 position-relative">
 
     <div class="flex-grow-1">
         <router-outlet></router-outlet>
@@ -7,7 +7,7 @@
     <footer *ngIf="showFooter()" class="py-4 bg-light border-top mt-5">
         <div class="container text-center">
             <small class="text-muted d-block">
-                © 2026 Universidad Central del Ecuador - Facultad de Ingeniería y Ciencias Aplicadas
+                © 2026 Universidad Central del Ecuador - Facultad de Filosofia, Letras y Ciencias de la Educación
             </small>
             <small class="text-muted d-block">Carrera de Mecatrónica</small>
 
@@ -18,5 +18,12 @@
             </div>
         </div>
     </footer>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRwf2Vq1EwC0tqluuFz6MBZ2-bOxIclhrsyi5SuUf0UjRqhA/viewform?usp=header" 
+       target="_blank" 
+       class="btn btn-primary rounded-circle shadow-lg position-fixed bottom-0 end-0 m-4 d-flex align-items-center justify-content-center btn-encuesta-global" 
+       style="width: 50px; height: 50px; z-index: 1000; background-color: #673ab7; border: none;">
+        <i class="bi bi-bar-chart-line-fill text-white fs-4"></i>
+    </a>
 
 </div>

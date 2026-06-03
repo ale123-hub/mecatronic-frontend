@@ -1,0 +1,8 @@
+.btn-encuesta-global {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-encuesta-global:hover {
+  transform: scale(1.1) !important;
+  background-color: #512da8 !important; /* Un morado un poco más oscuro al pasar el mouse */
+}
